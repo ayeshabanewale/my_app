@@ -14,7 +14,7 @@ ENV PYTHONUNBUFFERED 1
 RUN pip install --upgrade pip
 
 # copy project
-COPY src/ $MICRO_SERVICE
+COPY docker_python/src/ $MICRO_SERVICE
 RUN pip install -r requirements.txt
 EXPOSE 8501
 CMD streamlit run app.py
