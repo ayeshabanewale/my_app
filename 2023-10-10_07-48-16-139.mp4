@@ -1,0 +1,85 @@
+S3 - object storage 
+
+Object storage vs block storage 
+
+
+we cannot host an operating system on S3 
+
+
+
+how to recover data from S3 
+
+
+After uploading data on s3 , aws creates 
+copies of it .
+
+
+if we delete data , aws can give it back???
+No
+
+
+
+
+number of objects unlimited 
+
+
+per object 5 TB - 
+
+
+
+
+
+
+replication rule - to create copies 
+
+
+S3 is strongly consistent 
+
+transfer acceleration 
+
+
+Assignment - 
+
+
+multi-part upload 
+
+
+
+
+S3 - 
+acl - decides object ownership, basic permissions like read and write
+versioning - used to keep versions of same file in
+the bucket 
+can be used to recover accidentally deleted object 
+
+storage classes -
+
+
+lifecycle rule - cost optimization 
+1. It helps us expire or permanently delete objects 
+after certain number of days 
+
+2. It helps transition objects from one storage
+class to another
+
+replication rule -
+it copies data from one bucket to another
+cross account , cross region ,same region 
+
+SRR 
+CRR 
+static website hosting - 
+Scales automatically
+cheap
+bucket policy - 
+enforcing compliance
+control who can do what with our s3 bucket- resource based policy
+transfer acceleration
+
+
+
+
+
+
+
+
