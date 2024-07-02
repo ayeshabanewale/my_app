@@ -1,2 +1,2 @@
 echo "123"
-ec2 describe-instances --region ap-northeast-1
+aws ec2 describe-instances --region ap-northeast-1
