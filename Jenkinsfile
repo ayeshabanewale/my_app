@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'echo Hello Jenkins'
+                sh 'echo Hello Jenkinsddddddd'
             }
         }
     }
