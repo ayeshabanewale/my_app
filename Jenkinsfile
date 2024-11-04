@@ -8,18 +8,20 @@ pipeline {
          }
          stage('Checkout from Git'){
              steps{
-                 git branch: 'main', url: 'https://github.com/Ashfaque-9x/a-swiggy-clone.git'
+                 git branch: 'main', credentialsId: 'git-token', url: 'https://github.com/ayeshabanewale/my_app.git'
              }
          }  
          stage("Docker Build & Push"){
              steps{
                  script{
-                    withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker'){   
-                        sh "docker build -t swiggy-clone ."
-                        sh "docker tag swiggy-clone ashfaque9x/swiggy-clone:latest "
-                        sh "docker push ashfaque9x/swiggy-clone:latest "
+                    withDockerRegistry(credentialsId: '	docker-token', toolName: 'docker'){   
+                        sh "docker build -t my-image ."
+                        sh "docker tag my-image ayesha/swiggy-clone:latest "
+                        sh "docker push ayesha/swiggy-clone:latest "
                      }
                  }
              }
          }
     }
+    
+} 
