@@ -14,7 +14,7 @@ pipeline {
          stage("Docker Build & Push"){
              steps{
                  script{
-                    withDockerRegistry(credentialsId: '	docker-token', toolName: 'docker'){   
+                    withDockerRegistry(credentialsId: 'do-token', toolName: 'docker'){   
                         sh "docker build -t my-image ."
                         sh "docker tag my-image ayesha/swiggy-clone:latest "
                         sh "docker push ayesha/swiggy-clone:latest "
