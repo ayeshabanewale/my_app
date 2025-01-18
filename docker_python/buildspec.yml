@@ -8,7 +8,7 @@ env:
 phases:
   install:
     commands:
-      - apt-get update -y && apt-get install -y git
+      - apt-get update -y && apt-get install -y apt-transport-https
   pre_build:
     commands:
       - echo "This is Codecommit Repo URL - $CODEBUILD_SOURCE_REPO_URL"
